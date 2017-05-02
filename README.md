@@ -33,6 +33,8 @@ The output folder contains:
     4. The normalized infected image
     5. the alignment of the normalized infected seed image to the normalized seed image
 
+![23-5_github](https://cloud.githubusercontent.com/assets/21265433/25634815/35ec7e86-2f39-11e7-9553-859a37d6c437.png)
+
 The output file is a CSV spread sheet file contains the following fields
 
     1. The image ID
