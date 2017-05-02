@@ -49,6 +49,8 @@ The output file is a CSV spread sheet file contains the following fields
 
 note: if the user unchecks the 'scale' checkbox, fields 2, 3, 4, 5 will not be generated in the csv file.
 
+![image](https://cloud.githubusercontent.com/assets/21265433/25634888/74b3663e-2f39-11e7-9000-359ad11ae951.png)
+
 Testing the program:
 A set of input files are available in the 'program files' folder of the windows under the following path \UGA\SICIA_v.1.0\application\testing_data
 
