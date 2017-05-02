@@ -8,13 +8,21 @@ However, it is suitable for a large application, for other species and other met
 # Citation: the paper will be publish soon.
 
 The folder containing seed images and GFP-images (or infected images) are set in 'INPUT' panel.
+
 Note, the images in the GFP-folder and seeds images SHOULD HAVE THE SAME ID AND SHOULB BE IN jpg FORMAT. if the number of the files in the two folder not equall, the program will trigger an error.
+
 The output folder and csv file are set in 'OUTPUT' panel.
+
 Number of seeds to be analyzed can be set, the default is 1 to be analyze one seed. if you analyze multiple seeds, you have to set the number.
+
 'Background' panel is used to set the best cutoff for seed normalization, the value should <1 and >0, the user can test different values using 'Test' button.
+
 'GFP' panel is used to set the best cutoff for infection normalization, the value should <1 and >0, the user can test different values using 'Test' button.
+
 'Scale' panel is used to set the best cutoff for the scale, the value should <1 and >0, the user can test different values using 'Test' button.
+
 scale should be in the upper left corner of the infected seed images, if the user does not have a scale in the images, the scale checkbox is unchecked. However, some values will not be calculated.
+
 Once all parameters are set, 'Apply>>>' botton is pressed, the images will be processed in the sequence of input folders.
 
 The output folder contains:
