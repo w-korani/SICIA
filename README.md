@@ -26,25 +26,30 @@ scale should be in the upper left corner of the infected seed images, if the use
 Once all parameters are set, 'Apply>>>' botton is pressed, the images will be processed in the sequence of input folders.
 
 The output folder contains:
-1. The orginal seed image
-2. The normalized seed image
-3. The original infected image
-4. The normalized infected image
-5. the alignment of the normalized infected seed image to the normalized seed image
+    
+    1. The orginal seed image
+    2. The normalized seed image
+    3. The original infected image
+    4. The normalized infected image
+    5. the alignment of the normalized infected seed image to the normalized seed image
 
 The output file is a CSV spread sheet file contains the following fields
-1. The image ID
-2. The seed size (in mm2)
-3. The infection size (in mm2)
-4. The outer infection size: is the infection that is outside the scope of the seed.
-5. The coverage infection size: is the infection that is inside the scope of the seed.
-6. The coverage percentage of the coverage infection to the seed scope
-7. The intensity of the infection
-8. The number of pixels included in the infection
-9. The average intensity: normalizing the intensity to the number of pixels included in the infection
+
+    1. The image ID
+    2. The seed size (in mm2)
+    3. The infection size (in mm2)
+    4. The outer infection size: is the infection that is outside the scope of the seed.
+    5. The coverage infection size: is the infection that is inside the scope of the seed.
+    6. The coverage percentage of the coverage infection to the seed scope
+    7. The intensity of the infection
+    8. The number of pixels included in the infection
+    9. The average intensity: normalizing the intensity to the number of pixels included in the infection
+
 note: if the user unchecks the 'scale' checkbox, fields 2, 3, 4, 5 will not be generated in the csv file.
 
 Testing the program:
 A set of input files are available in the 'program files' folder of the windows under the following path \UGA\SICIA_v.1.0\application\testing_data
+
 the testing data is run fine with the following paramters:
-background_cutoff = 0.3, GFP_cutoff = 0.6, Scale_cutoff = 0.28
+
+    background_cutoff = 0.3, GFP_cutoff = 0.6, Scale_cutoff = 0.28
