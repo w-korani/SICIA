@@ -5,7 +5,8 @@ the program was designed mainly for analyze peanut seeds which infected by GFP-A
 
 However, it is suitable for a large application, for other species and other methods of infection.
 
-# Citation: the paper will be publish soon.
+# Citation: plead cite to:
+Korani, W. A.; Chu, Y.; Holbrook, C., Clevenger, J. and Ozias-Akins, P. (2017). Genotypic Regulation of Aflatoxin Accumulation but Not Aspergillus Fungal Growth upon Post-Harvest Infection of Peanut (Arachis hypogaea L.) Seeds. Toxins, 9(7), 218.
 
 The folder containing seed images and GFP-images (or infected images) are set in 'INPUT' panel.
 
