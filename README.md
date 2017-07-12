@@ -132,9 +132,9 @@ infection: levels=0.55, noise = 1000, filter =Blue, image_substraction enabled
 
 
 ![wsr-it1](https://user-images.githubusercontent.com/21265433/28124268-6b974136-66e0-11e7-838e-f7169a7ce669.jpeg)
-id | coverage | intinsity | object | average_intensity
--- | -- | -- | -- | --
-wsr-IT1.jpeg | 40.6602 | 270882 | 9 | 30098
+
+id	coverage	intinsity	object	average_intensity
+wsr-IT1.jpeg	40.6602	270882	9	30098
 
 Single leaf infection:
 
