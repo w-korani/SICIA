@@ -1,5 +1,5 @@
 # SICIA: Seed Infection Coverage and Intensity Analyzer
-Image processing software for analyzing seed coverage infection,
+Image processing software for analyzing seed, leaf, stem, ... coverage infection,
 
 the program was designed mainly for analyze peanut seeds which infected by GFP-Aspergillus-flavus strain.
 
