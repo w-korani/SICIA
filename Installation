@@ -1,4 +1,4 @@
-SICIA_v.1.0 was desgined to be compatible with Windows-7 and upper versions (64-bit) using MATLAB R2016a.
+SICIA_v.1.0 and SICIA2_2.0.exe were desgined to be compatible with Windows-7 and upper versions (64-bit) using MATLAB R2016a.
 The program is downloaed in .exe file which can be directly intalled.
 The program may required MATLAB Runtime application for MATLAB R2016a to be run, it can be downloaed from the following link:
 https://www.mathworks.com/supportfiles/downloads/R2016b/deployment_files/R2016b/installers/win64/MCR_R2016b_win64_installer.exe
