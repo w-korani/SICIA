@@ -60,3 +60,65 @@ A set of input files are available in the 'program files' folder of the windows 
 the testing data is run fine with the following paramters:
 
     background_cutoff = 0.3, GFP_cutoff = 0.6, Scale_cutoff = 0.28
+    
+# SICIA version 2:
+The folder containing images is set in 'Input/Output' panel.
+Images' types should be setting by user, the default is jpg. The analysis will done only for files having the set extenstion.
+output folder and file should be set in 'Input/Output' panel.
+level, noise, filter, scale and invert_image should be set for infection and background:
+  it is tested by Test_cutoffs button.
+  Set buttons are used to set the selected parameters to infection or backgound.
+  Refresh buttons are used to allow user to re-set the parameters to infection of background
+It is preferable to set the background paramaters before the infection
+In some cases, when the infection pattern has colours close to the backgound of the orginal images (such as darkbrown and black), 
+  Image-subtraction is used to solve the issue, it is only availabe to infection.
+If the user has scale, it should be in the UPPER LEFT corner of the image and the diameter can be set in milimeters. 
+  the default is 26.5 mm which is the diameter of USA 1 dollar coin.
+  
+  
+The output folder contains:
+1. The orginal image
+2. The filter image
+3. The infection pattern
+4. the alignment of the infection to the backgound
+
+The output file is a CSV spread sheet file contains the following fields
+1. The image ID
+2. The back size (in mm2)
+3. The infection size (in mm2)
+4. The coverage percentage of the coverage infection to the seed scope
+5. The intensity of the infection
+6. The number of objects
+7. The average intensity: normalizing the intensity to the number of objects
+note: if the user unchecks the 'scale' checkbox, fields 2, 3, will not be generated in the csv file.
+note2: paramters 6 and 7 are used to count and normalze to number of infected leaves, seeds, stem, or any plant parts used in the image,
+       therfore, if the number of object is differnt than number of plant parts in the original image, 
+       the user should re-analyze and use more suitable settings
+       
+Note, Although, the program can deal with differnt single color background images, the black background is preferable.
+
+Testing the program:
+A set of input files are available in the 'program files' folder of the windows under the following path \UGA\SICIA_2.0\application\input_test.
+the outputs are available too.
+
+
+the testing data is run fine with the following paramters:
+
+Stem infection: 
+Testing image: https://www.ars.usda.gov/midwest-area/st-paul-mn/cereal-disease-lab/docs/cereal-rusts/wheat-stem-rust/
+image_type: jpeg
+background: levels = 0.3, noise = 1000, filter=Grey
+infection: levels=0.55, noise = 1000, filter =Blue, image_substraction enabled
+
+Single leaf infection:
+Testing image: https://www.ars.usda.gov/midwest-area/st-paul-mn/cereal-disease-lab/docs/barberry/black-stem-rust-biology-and-threat-to-wheat-growers/
+image_type: jpg
+background: levels = 0.1, noise = 20, filter=Grey
+infection: levels=0.6, noise = 20, filter =Grey
+
+Multi leaves infection:
+Testing image: courtesy of Dr. Larissa Arrais Guimaraes 
+image_type: png
+background: levels = 0.33, noise = 2000, filter=Grey
+infection: levels=0.39, noise = 2000, filter =Green, image_substraction enabled
+
