@@ -130,6 +130,12 @@ background: levels = 0.3, noise = 1000, filter=Grey
 
 infection: levels=0.55, noise = 1000, filter =Blue, image_substraction enabled
 
+
+![wsr-it1](https://user-images.githubusercontent.com/21265433/28124268-6b974136-66e0-11e7-838e-f7169a7ce669.jpeg)
+id | coverage | intinsity | object | average_intensity
+-- | -- | -- | -- | --
+wsr-IT1.jpeg | 40.6602 | 270882 | 9 | 30098
+
 Single leaf infection:
 
 Testing image: https://www.ars.usda.gov/midwest-area/st-paul-mn/cereal-disease-lab/docs/barberry/black-stem-rust-biology-and-threat-to-wheat-growers/
@@ -140,6 +146,10 @@ background: levels = 0.1, noise = 20, filter=Grey
 
 infection: levels=0.6, noise = 20, filter =Grey
 
+
+![wsr-it](https://user-images.githubusercontent.com/21265433/28124297-7adcda20-66e0-11e7-9144-8d2111303bdc.jpg)
+
+
 Multi leaves infection:
 
 Testing image: courtesy of Dr. Larissa Arrais Guimaraes 
@@ -149,4 +159,6 @@ image_type: png
 background: levels = 0.33, noise = 2000, filter=Grey
 
 infection: levels=0.39, noise = 2000, filter =Green, image_substraction enabled
+
+![picture1](https://user-images.githubusercontent.com/21265433/28124337-9ae2a5fc-66e0-11e7-8ac0-8519cb4bba92.png)
 
