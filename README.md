@@ -62,16 +62,23 @@ the testing data is run fine with the following paramters:
     background_cutoff = 0.3, GFP_cutoff = 0.6, Scale_cutoff = 0.28
     
 # SICIA version 2:
+
 The folder containing images is set in 'Input/Output' panel.
+
 Images' types should be setting by user, the default is jpg. The analysis will done only for files having the set extenstion.
+
 output folder and file should be set in 'Input/Output' panel.
+
 level, noise, filter, scale and invert_image should be set for infection and background:
   it is tested by Test_cutoffs button.
   Set buttons are used to set the selected parameters to infection or backgound.
   Refresh buttons are used to allow user to re-set the parameters to infection of background
+
 It is preferable to set the background paramaters before the infection
+
 In some cases, when the infection pattern has colours close to the backgound of the orginal images (such as darkbrown and black), 
   Image-subtraction is used to solve the issue, it is only availabe to infection.
+
 If the user has scale, it should be in the UPPER LEFT corner of the image and the diameter can be set in milimeters. 
   the default is 26.5 mm which is the diameter of USA 1 dollar coin.
   
