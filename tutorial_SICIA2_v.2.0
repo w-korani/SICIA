@@ -18,7 +18,7 @@ The output folder contains:
 3. The infection pattern
 4. the alignment of the infection to the backgound
 
-The output file is a CSV spread sheet file contains the following fields
+The output file is a CSV spread sheet file containing the following fields
 1. The image ID
 2. The back size (in mm2)
 3. The infection size (in mm2)
@@ -26,12 +26,12 @@ The output file is a CSV spread sheet file contains the following fields
 5. The intensity of the infection
 6. The number of objects
 7. The average intensity: normalizing the intensity to the number of objects
-note: if the user unchecks the 'scale' checkbox, fields 2, 3, will not be generated in the csv file.
-note2: paramters 6 and 7 are used to count and normalze to number of infected leaves, seeds, stem, or any plant parts used in the image,
+note1: if the user unchecks the 'scale' checkbox, fields 2, 3, will not be generated in the csv file.
+note2: paramters 6 and 7 are used to count and normalize to number of infected leaves, seeds, stem, or any plant parts used in the image,
        therfore, if the number of object is differnt than number of plant parts in the original image, 
        the user should re-analyze and use more suitable settings
        
-Note, Although, the program can deal with differnt single color background images, the black background is preferable.
+Note: Although, the program can deal with differnt single color background images, the black background is preferable.
 
 Testing the program:
 A set of input files are available in the 'program files' folder of the windows under the following path \UGA\SICIA_2.0\application\input_test.
@@ -57,3 +57,27 @@ Testing image: courtesy of Dr. Larissa Arrais Guimaraes
 image_type: png
 background: levels = 0.33, noise = 2000, filter=Grey
 infection: levels=0.39, noise = 2000, filter =Green, image_substraction enabled
+
+Applicaiton pipeline:
+1. "Input Folder" is used to locate the folder containing the images to be analyzed.
+2. "images' type" is used to assign image format to be analyzed, only images that have this extension will be processed.
+3. "Output Folder" is used to locate the directory that output images will be stored
+4. "Output File" is used to assign a directory and create the csv file that will store the output data.
+5. differnt parameters are chosen/adjusted 
+then "Test_cuttoffs" is pressed to show the results of the first image contained in the input folder on the screen
+  the user adjust differnt paramters:
+    Level: contrast value, the value should be >0 and <1
+    Noise: removing the noise from the image, the value is >=1 and the maximum relays on the image resolution
+    Filter: the color filter.
+    Invert_image: it is in some cases when the other parameters fail to extract the objects from the image,
+                  more likely to be used if images having a white background were token
+    Scale: it is picked if the images have scale, the scale should be in the TOP LEFT CORNER of the images,
+           the default scale is USA one dollar coin, however the user can use any scale and type its diameter in mm in front of scale checkbox
+6. Once the user choose the parameters, "Set" can be used to set the selected parameters.
+    As the parameters are differnt betweeen the infection and its backgound, the suitable parameters are picked for each one by pressing "Set",
+    once "Set" was pressed, it will be inactive and continuing changing parameters/pressing "test_cuttoffs" will not affect any more unless the usre press "Refresh"
+    In some cases, objects of only infection images need to be substract (for example: if the infection color is less contrasted with the image background),
+    the checkbox "image_substraction" should be used in this cases.
+7. After the user set the paramters for both infection and its backgorund, "APPLY" is pressing to do the analysis, 
+the analysis will start by the first image (having the assigned extension) of the input folder until the last image and the processing images will be appear in addtion to indicator of the number of precessed images.
+
